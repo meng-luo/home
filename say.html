@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  oncontextmenu=self.event.returnValue=false onselectstart="return false">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="source/js/header.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2037988_8uzxiubtutg.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+    <title>碎语 -梦落の主页</title>
+</head>
+<body>
+    <noscript> <iframe src="*.htm"></iframe> </noscript>
+    <SCRIPT language=JavaScript>
+        document.oncontextmenu = nocontextmenu;
+        document.onmousedown = norightclick;
+        document.ondragstart = noDragstart;
+        document.onselectstart = noSelect;
+        document.onselect = document.selection.empty();
+        document.onkeydown = keyDown;
+    </SCRIPT>
+    <div class="change" id="card">
+        <a style="padding:2%;" href="/"><img class="change" id="favorite" style="float:left;width:80px;margin-top:-15px;margin-left:-15px;" src="https://unpkg.zhimg.com/meng-luo-blog@1.4.0/avatar.webp"></a>
+        <div style="padding:1%;float:left;"><b style="font-size:150%;">碎语<br></b>Say</div>
+        
+        <br><br><br>
+        <div style="padding:3%;">
+            <!-- 引用 artitalk -->
+            <script type="text/javascript" src="https://unpkg.zhimg.com/artitalk"></script>
+            <!-- 存放说说的容器 -->
+            <div id="artitalk_main"></div>
+            <script>
+            new Artitalk({
+                serverURL: 'https://artitalk.mengluo.workers.dev',
+                appId: 'myartitalk', // Your LeanCloud appId
+                appKey: 'meng-li-yu-luo' // Your LeanCloud appKey
+            })
+            </script>
+    
+        </div>
+        <a style="padding:2%;" href="/"><i class="iconfont iconicon-arrow-left2">返回</i></a>
+        <br>
+        <br>
+    </div>
+    <footer id="footer">
+        <script type="text/javascript" src="source/js/footer.js"></script>
+    </footer>
+
+</body>
+</html>
